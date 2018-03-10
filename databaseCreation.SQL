@@ -30,13 +30,9 @@ sausage and mushrooms, $12 each
 
 INSERT Customers (PhoneNumber, [Name], [Address], City, [State])
 VALUES ('2015551212', 'Clark Kent', '123 E Main St', 'Metropolis', 'NY')
-SELECT * FROM Customers 
---CustomerId: 1
 
 INSERT Orders (CustomerId, OrderTotal, OrderStatusId, OrderDate)
 VALUES (1, 12, 1, 'December 2, 2016 7:00 pm')
-SELECT * FROM Orders
--- OrderId: 1
 UPDATE Orders SET OrderTotal = 24 WHERE OrderId = 1
 
 INSERT OrderItems (OrderId, SizeId, CrustId, Cheese, Sausage, Mushroom)
@@ -44,7 +40,7 @@ VALUES (1, 3, 1, 1, 1, 1)
 INSERT OrderItems (OrderId, SizeId, CrustId, Cheese, Sausage, Mushroom)
 VALUES (1, 3, 1, 1, 1, 1)
 SELECT * FROM OrderItems
-*/
+
 
 /*
 Bruce Wayne
